@@ -1,5 +1,3 @@
-const { Phaser } = require("../lib/phaser");
-
 let config = {
     type: Phaser.CANVAS,
     width: 640,
@@ -14,11 +12,10 @@ let borderUISize = game.config.height / 15;
 let borderPadding = borderUISize / 3;
 
 // reserve keyboard vars
-let keyF, keyR, ketLEFT, keyRIGHT;
+let keyF, keyR, keyLEFT, keyRIGHT;
 
 //define keys
-keyF = this.InputDeviceInfo.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.F);
-keyR = this.InputDeviceInfo.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
-keyLEFT = this.InputDeviceInfo.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
-keyRIGHT = this.InputDeviceInfo.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
-
+keyF = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.F);
+keyR = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
+keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
